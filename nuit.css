@@ -1,0 +1,497 @@
+@font-face {
+    font-family: "Pirates";
+    src:
+      url("./Pirates.otf") format("opentype"),
+   
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+  * {
+    margin: 0;
+  }
+  #pageintro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    transition: opacity 1s ease-in-out;
+    position: absolute;
+    z-index: 1;
+  }
+  /*ma page d'accueil mode jour*/
+  #main {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+   
+  
+  }
+  
+  #myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+  }
+  
+  #nav {
+    display: flex;
+    width: 100vw;
+    height: 200px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    width: 200px;
+  }
+  #titreh1 {
+    font-family: Pirates;
+    font-style: unset;
+    color:gold ;
+    font-size: 40px;
+  }
+  #mylogo {
+    width: 100%;
+  }
+  .bounce-in-bottom {
+      -webkit-animation: bounce-in-bottom 2s 4s both;
+              animation: bounce-in-bottom 2s 4s both;
+  }
+  
+   /* ----------------------------------------
+   * animation bounce-in-bottom
+   * ----------------------------------------
+   */
+   @-webkit-keyframes bounce-in-bottom {
+    0% {
+      -webkit-transform: translateY(500px);
+              transform: translateY(500px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+      opacity: 0;
+    }
+    38% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+      opacity: 1;
+    }
+    55% {
+      -webkit-transform: translateY(65px);
+              transform: translateY(65px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    72% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    81% {
+      -webkit-transform: translateY(28px);
+              transform: translateY(28px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    90% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    95% {
+      -webkit-transform: translateY(8px);
+              transform: translateY(8px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+  @keyframes bounce-in-bottom {
+    0% {
+      -webkit-transform: translateY(500px);
+              transform: translateY(500px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+      opacity: 0;
+    }
+    38% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+      opacity: 1;
+    }
+    55% {
+      -webkit-transform: translateY(65px);
+              transform: translateY(65px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    72% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    81% {
+      -webkit-transform: translateY(28px);
+              transform: translateY(28px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    90% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    95% {
+      -webkit-transform: translateY(8px);
+              transform: translateY(8px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+  
+  
+  #salut {
+    width: 48%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 200px;
+    left: 20px;
+    font-style: italic;
+    font-size: 40px;
+    font-family:sans-serif;
+    text-transform:lowercase;
+  }
+      /*fin de la apremière page d'accueil mode jour-->
+  
+  
+      <!--page d'intro*/
+  
+    #christ {
+      font-style: oblique;
+      text-transform: capitalize;
+      color: gold ;
+      position:fixed;
+    }
+  /*fin de la apremière page d'accueil mode jour*/
+  #imglogo {
+    width: 50%;
+    height: 70%;
+  }
+  
+  .loader {
+    position: fixed;
+    z-index: 9999;
+    background: url('logo-removebg-preview.png') 50% 50% no-repeat;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    cursor: wait;
+  }
+  /*creation menu hamberger
+  aboutm e*/
+  #burger {
+    position: relative;
+    font-size: 24px; /* Taille de l'icône */
+    color: white;
+    cursor: pointer; /* Curseur au survol */
+    width: 200px;
+    height: 200px;
+    background-color: purple;
+  }
+  /* 1. creation page about me*/
+  #cadretexteaboutbg{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-image:url("Canon deck, Marc Zieger.jpg");
+    background-size: 100% 100%;
+    align-items: center;
+    
+  }
+  
+  #photoaboutme {
+    width: 250px;
+    Height: 700px;
+    background-color: #00000083;
+    background-image: url(img2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 80%;
+  }
+  #texteaboutme{
+    width: 700px;
+    Height: 700px;
+    background-color: #00000083;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #mytexte{
+    color:#f9f8f6;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:justify;
+    background-size:100%;
+  
+  }
+  /*creation page philosophie*/
+  #philobg {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-image:url("imgPhiloBG.jpg");
+    background-size: 100% 100%;
+    align-items: center; 
+  }
+  
+  #photophilo {
+    width: 250px;
+    Height: 700px;
+    background-image: url(img2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 80%;
+  }
+  
+  #textephilo {
+    width: 400px;
+    Height: 700px;
+  }
+  #mytextephilo {
+    color:#ffffff;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: medium;
+  }
+  /*creation de la page CV /lien sans effet hover */
+  h1{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+  }
+  p{
+    color:white;
+  }
+  #cvbg {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image:url("imgCVBG.jpg");
+    background-size: 100% 100%;
+    align-items: center; 
+  }
+  .cvtitre {
+    width: 50px;
+    Height: 50px;
+    
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  .cvtitre p {
+  display: none;
+  }
+  .cvtitre:hover {
+  width: 200px;
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.551);
+  border-radius: 20%;
+  }
+  .cvtitre:hover p {
+    display: block;
+    width: 90%;
+    font-size: 15px;
+  }
+  /*emplacement des elements sur le cv*/ 
+  #formation {
+    position: absolute;
+    top: 36%;
+    bottom: 0;
+    left: 25%;
+    right: 0;
+  }
+  #experpro {
+    position: absolute;
+    top: 34%;
+    bottom: 0;
+    left: 48%;
+    right: 0;
+  }
+  #experpro:hover {
+    width: 500px;
+    height: 400px;
+  }
+  #exp{
+    color: whitesmoke;
+  }
+  #langues {
+    position: absolute;
+    top: 28%;
+    bottom: 0;
+    left: 0%;
+    right: 0;
+  }
+  #profiltyp{
+    position: absolute;
+    top: 62%;
+    bottom: 0;
+    left: 37%;
+    right: 0;
+  }
+  #profiltyp:hover{
+    width: 100px;
+    height: 100px;
+  }
+  #pointforts{
+    position: absolute;
+    top: 62%;
+    bottom: 0;
+    left: 19%;
+    right: 0;
+  }
+  
+  
+  /*creation du bouton download CV*/
+  #btncv{
+    width: 100px;
+    background-color: blanchedalmond;
+    height: 25px;
+    border-radius: 20px;
+   
+  }
+  
+  
+  /*------------creation mode nuit*--------------*/
+  
+  #modenuit{
+    width: 100px;
+    height: 100px;
+    background-color: #ff0e0e;
+  }
+
+  /*----------------mode telephone-----------------*/
+
+@media screen and (max-width:767px) {
+    #titreh1{
+        font-size:20px;
+        font-family: Pirates;
+        font-style: unset;
+        color: gold;
+        text-align: center;
+    }
+
+    #christ{
+        font-size:20px;
+    }
+    #mylogo{
+        background-size: 100% 100%;
+    }
+    #texteaboutme{
+        padding: 50px;
+        background-color: #00000083;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+      /*--------------menu burger----------------*/
+    #burger{
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+        width: 30%;
+        height: 201px;
+        background-color: rgba(0, 0, 0, 0.449);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    
+    }
+    #btncv {
+        width: 100px;
+        background-color: #00000015;
+        height: 25px;
+        border-radius: 20px;
+        margin-left: 15px;
+
+    }
+    #burgerlist{
+        font-size: 20px;
+        position: absolute;
+        left: 0%;
+        list-style-type: none;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        font-size: 12px;
+        margin-left: 6px;
+        width: 100%;
+    }
+
+    #salut {
+        width: 48%;
+        display: flex;
+        justify-content: space-around;
+        position: absolute;
+        bottom: 400px;
+        left: 20px;
+        font-style: italic;
+        font-size: 40px;
+        font-family: sans-serif;
+        text-transform: lowercase;
+    }
+
+/*--------------liste humber----------------*/
+#texteaboutme {
+    width: 700px;
+    Height: 700px;
+    background-color: #00000083;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#philobg {
+    width: 700px;
+    Height: 700px;
+    background-color: #00000083;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/*--------------page d'accueil mode jour--sur style.css--------------*/
+
+
+}
+
+    
+
+
