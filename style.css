@@ -928,12 +928,12 @@ border-radius: 20%;
   Height: 676px;
   background-image: url(img2.png);
   background-size: cover;
-  /* background-repeat: no-repeat; */
   background-position: -71px;
   position: relative;
   right: 50%;
   top: 9%;
   padding: 0px;
+  position: fixed;
 }
 #textephilo {
   position: absolute;
