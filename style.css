@@ -916,7 +916,7 @@ border-radius: 20%;
 
 #philobg {
   width: 972px;
-  Height: 847px;
+  Height: 100%;
   background-color: #00000083;
   display: flex;
   justify-content: center;
