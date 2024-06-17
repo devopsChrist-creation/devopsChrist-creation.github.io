@@ -544,6 +544,9 @@
     color: white;
     border-color: gold;
 }
+#lienbtncv{
+  font-size: 10px;
+}
    
 
   /*------------creation mode nuit*--------------*/
@@ -631,6 +634,9 @@
       font-size: 16px;
       left: 19px;
       border-color: gold;
+    }
+    #lienbtncv{
+      font-size: 10px;
     }
     #burgerlist{
       font-size: 20px;
