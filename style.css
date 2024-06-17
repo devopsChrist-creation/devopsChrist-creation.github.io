@@ -871,7 +871,7 @@ border-radius: 20%;
 /*--------------pages 1 about me----------------*/
 #photoaboutme {
   width: 198px;
-  Height: 759px;
+  Height: 90%;
   background-color: #00000083;
   background-image: url(img2.png);
   background-size: cover;
@@ -895,7 +895,7 @@ border-radius: 20%;
 }
 #texteaboutme {
   width: 216px;
-  Height: 759px;
+  Height: 90%;
   background-color: #00000083;
   display: flex;
   justify-content: center;
@@ -925,7 +925,7 @@ border-radius: 20%;
 }
 #photophilo {
   width: 312px;
-  Height: 676px;
+  Height: 90%;
   background-image: url(img2.png);
   background-size: cover;
   background-position: -71px;
@@ -950,7 +950,7 @@ border-radius: 20%;
   z-index: 2;
 }
 #rta2 {
-  left: -28%;
+  left: -44%;
 }
 #cvbg {
     position: relative;
