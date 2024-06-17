@@ -54,6 +54,8 @@
     font-style: unset;
     color:gold ;
     font-size: 40px;
+    position: absolute;
+    left: 31%;
   }
   #mylogo {
     width: 100%;
@@ -215,14 +217,52 @@
   /*creation menu hamberger
   aboutm e*/
   #burger {
-    position: relative;
-    font-size: 24px; /* Taille de l'icône */
-    color: white;
-    cursor: pointer; /* Curseur au survol */
-    width: 200px;
-    height: 200px;
-    background-color: purple;
+    font-size: 24px;
+  color: white;
+  cursor: pointer;
+  width: 13%;
+  height: 367px;
+  background-color: rgba(0, 0, 0, 0.449);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 114px;
+  right:100%;
+  padding-inline-start: 0px;
+  padding: 0px;
   }
+  #burgerlist{
+    font-size: 20px;
+    position: absolute;
+    left: 0%;
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    margin-left: 6px;
+    width: 100%;
+}
+#blob{
+  width: 46px;
+  height: 34px;
+  background-color: gold;
+  position: absolute;
+  right: 2%;
+  top: 11%;
+  z-index: 1;
+  display: block;
+}
+#blob2{
+  width: 27px;
+  height: 19px;
+  background-color: gold;
+  position:absolute;
+  top: 2%;
+  left: 4%;
+}
   /* 1. creation page about me*/
   #cadretexteaboutbg{
     display: flex;
@@ -231,7 +271,8 @@
     background-image:url("Canon deck, Marc Zieger.jpg");
     background-size: 100% 100%;
     align-items: center;
-    
+    justify-content: center;
+    position: relative;
   }
   
   #photoaboutme {
@@ -242,6 +283,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 80%;
+    position: absolute;
+    left: 6%;
   }
   #texteaboutme{
     width: 700px;
@@ -250,15 +293,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    left: 22%;
   }
   #mytexte{
     color:#f9f8f6;
     font-family:Arial, Helvetica, sans-serif;
     text-align:justify;
     background-size:100%;
-  
   }
-  /*creation page philosophie*/
+  .retouraccueil{
+    width: 92px;
+    height: 28px;
+    border: 2px solid #ffffff;
+    background-color: #ffffff87;
+    position: relative;
+    top: -39%;
+    left: -39%;
+    z-index: 2;
+  }
+  /*-----------creation page philosophie----------*/
   #philobg {
     display: flex;
     width: 100vw;
@@ -267,34 +321,54 @@
     background-size: 100% 100%;
     align-items: center; 
   }
+  /*----------bouton accueil------------*/
+  #rta2{
+    left: 1%;
+  }
   
   #photophilo {
     width: 250px;
-    Height: 700px;
-    background-image: url(img2.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 80%;
+  Height: 700px;
+  background-image: url(img2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -71px;
+  position: relative;
+  right: 5%;
+  top: 0%;
   }
   
   #textephilo {
-    width: 400px;
-    Height: 700px;
+    position: absolute;
+  left: 21%;
+  top: 25%;
   }
   #mytextephilo {
     color:#ffffff;
     font-family:Arial, Helvetica, sans-serif;
     font-size: medium;
   }
-  /*creation de la page CV /lien sans effet hover */
+  .rettouraccueil2{
+    width: 92px;
+    height: 28px;
+    border: 2px solid #ffffff;
+    background-color: #ffffff87;
+    position: relative;
+    top: -335px;
+    left: 45px;
+    z-index: 2;
+  }
+  /*-------------titre page d'accueil--------------*/
   h1{
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     text-transform: capitalize;
+    color: white;
   }
   p{
     color:white;
   }
+  /*creation de la page CV /lien sans effet hover */
   #cvbg {
     position: relative;
     width: 100vw;
@@ -303,10 +377,20 @@
     background-size: 100% 100%;
     align-items: center; 
   }
+  #rta3{
+    background-color: rgba(255, 217, 0, 0.518);
+    width: 107px;
+    height: 39px;
+    position: absolute;
+    top: 24%;
+    left: 22%;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-color: gol
+  }
   .cvtitre {
     width: 50px;
     Height: 50px;
-    
     border-radius: 100%;
     display: flex;
     flex-direction: column;
@@ -375,18 +459,87 @@
     left: 19%;
     right: 0;
   }
-  
+  /**
+ * ----------------------------------------
+ * animation shake-horizontal
+ * ----------------------------------------
+ */
+
+.shake-horizontal {
+	-webkit-animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) 3s both;
+	        animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) 3s both;
+}
+ @-webkit-keyframes shake-horizontal {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  80% {
+    -webkit-transform: translateX(8px);
+            transform: translateX(8px);
+  }
+  90% {
+    -webkit-transform: translateX(-8px);
+            transform: translateX(-8px);
+  }
+}
+@keyframes shake-horizontal {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  80% {
+    -webkit-transform: translateX(8px);
+            transform: translateX(8px);
+  }
+  90% {
+    -webkit-transform: translateX(-8px);
+            transform: translateX(-8px);
+  }
+}
   
   /*creation du bouton download CV*/
   #btncv{
-    width: 100px;
-    background-color: blanchedalmond;
-    height: 25px;
+    width: 97px;
+    background-color: #0000005e;
+    height: 22px;
     border-radius: 20px;
+    position: relative;
+    top: 6px;
+    left: 33px;
+    color: white;
+    border-color: gold;
+}
    
-  }
-  
-  
+
   /*------------creation mode nuit*--------------*/
   
   #modenuit{
@@ -394,16 +547,41 @@
     height: 100px;
     background-color: #ff0e0e;
   }
-
   /*----------------mode telephone-----------------*/
 
 @media screen and (max-width:767px) {
+
+  #blob  {
+    display: block;
+    background-color: yellow;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 44px;
+    right: 25px;
+    z-index: 10;
+  }
+  #blob2 {
+    display: block;
+    background-color: yellow;
+    width: 35px;
+    height: 20px;
+    position: absolute;
+    top: 15px;
+    right: 125px;
+  }
+  #myVideo {
+    position: absolute;
+    right: -27px;
+    bottom: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
     #titreh1{
         font-size:20px;
-        font-family: Pirates;
-        font-style: unset;
-        color: gold;
-        text-align: center;
+      position: relative;
+      left: -1%;
     }
 
     #christ{
@@ -421,37 +599,45 @@
     }
       /*--------------menu burger----------------*/
     #burger{
-        font-size: 24px;
-        color: white;
-        cursor: pointer;
-        width: 30%;
-        height: 201px;
-        background-color: rgba(0, 0, 0, 0.449);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
+      font-size: 15px;
+      color: #000000;
+      cursor: pointer;
+      height: 347px;
+      background-color: rgba(0, 0, 0, 0.449);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      right: -100%;
+      transition: 1s;
+      width: 42%;
+      align-items: center;
+      gap: 18px;
+      top: 126px;
     
     }
     #btncv {
-        width: 100px;
-        background-color: #00000015;
-        height: 25px;
-        border-radius: 20px;
-        margin-left: 15px;
-
+      width: 122px;
+      background-color: #00000015;
+      height: 37px;
+      border-radius: 20px;
+      margin-left: -30px;
+      top: 40px;
+      font-size: 16px;
+      left: 19px;
+      border-color: gold;
     }
     #burgerlist{
-        font-size: 20px;
-        position: absolute;
-        left: 0%;
-        list-style-type: none;
+      font-size: 20px;
+      position: absolute;
+      left: 0%;
+      list-style-type: none;
     }
     a{
-        text-decoration: none;
-        color: white;
-        font-size: 12px;
-        margin-left: 6px;
-        width: 100%;
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+      margin-left: 6px;
+      width: 100%;
     }
 
     #salut {

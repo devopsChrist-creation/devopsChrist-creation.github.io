@@ -1,3 +1,7 @@
+
+* {
+  margin: 0;
+}
 @font-face {
   font-family: "Pirates";
   src:
@@ -5,9 +9,7 @@
  
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-* {
-  margin: 0;
-}
+
 #pageintro {
   display: flex;
   justify-content: center;
@@ -90,8 +92,10 @@
 #titreh1 {
   font-family: Pirates;
   font-style: unset;
-  color:gold ;
-  font-size: 40px;
+  color: gold;
+  font-size: 46px;
+  position: fixed;
+  left: 28%;
 }
 /**
  * ----------------------------------------
@@ -331,8 +335,8 @@
   display: flex;
   justify-content: space-around;
   position: absolute;
-  bottom: 200px;
-  left: 20px;
+  bottom: 280px;
+  left: 15px;
   font-style: italic;
   font-size: 40px;
   font-family:sans-serif;
@@ -370,18 +374,13 @@
     opacity: 1;
   }
 }
-    /*fin de la apremière page d'accueil mode jour-->
-
-
-    <!--page d'intro*/
+    /*--page d'intro*/
 
   #christ {
     font-style: oblique;
     text-transform: capitalize;
-    color: #eeddaef2 ;
+    color: gold ;
   }
-/*fin de la apremière page d'accueil mode jour*/
-
 #imglogo {
   width: 50%;
   height: 70%;
@@ -397,17 +396,49 @@
   width: 100%;
   cursor: wait;
 }
-/*creation menu hamberger
-aboutm e*/
-#burger {
-  position: relative;
-  font-size: 24px; /* Taille de l'icône */
+/*--------------creation menu hamberger-----------*/
+#burger {  
+  font-size: 24px;
   color: white;
-  cursor: pointer; /* Curseur au survol */
-  width: 200px;
-  height: 200px;
-  background-color: purple;
-
+  cursor: pointer;
+  width: 17%;
+  height: 367px;
+  background-color: rgba(0, 0, 0, 0.449);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 114px;
+  right: 100%;
+  padding-inline-start: 0px;
+}
+#burgerlist{
+  font-size: 20px;
+  position: absolute;
+  left: 0%;
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+  margin-left: 6px;
+  width: 100%;
+}
+#blob{
+  width: 46px;
+  height: 34px;
+  background-color: gold;
+  position: absolute;
+  right: 2%;
+  top: 11%;
+  z-index: 1;
+  display: block;
+}
+#blob2{
+  width: 20px;
+  height: 22px;
+  background-color: gold;
 }
 /* 1. creation page about me*/
 #cadretexteaboutbg{
@@ -418,8 +449,8 @@ aboutm e*/
   background-size: 100% 100%;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
-
 
 #photoaboutme {
   width: 250px;
@@ -429,6 +460,8 @@ aboutm e*/
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 80%;
+  position: absolute;
+  left: 6%;
 }
 #texteaboutme{
   width: 700px;
@@ -437,15 +470,26 @@ aboutm e*/
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  left: 22%;
 }
 #mytexte{
   color:#f9f8f6;
   font-family:Arial, Helvetica, sans-serif;
   text-align:justify;
   background-size:100%;
-
 }
-/*creation page philosophie*/
+.retouraccueil{
+  width: 92px;
+  height: 28px;
+  border: 2px solid #ffffff;
+  background-color: #ffffff87;
+  position: relative;
+  top: -39%;
+  left: -39%;
+  z-index: 2;
+}
+/*----------creation page philosophie------------*/
 #philobg {
   display: flex;
   width: 100vw;
@@ -454,34 +498,54 @@ aboutm e*/
   background-size: 100% 100%;
   align-items: center; 
 }
-
+/*----------bouton accueil------------*/
+#rta2{
+  left: 1%;
+}
 #photophilo {
   width: 250px;
   Height: 700px;
   background-image: url(img2.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 80%;
+  background-position: -71px;
+  position: relative;
+  right: 5%;
+  top: 0%;
 }
-
 #textephilo {
-  width: 400px;
-  Height: 700px;
+  position: absolute;
+  left: 21%;
+  top: 25%;
 }
 #mytextephilo {
   color:#ffffff;
   font-family:Arial, Helvetica, sans-serif;
   font-size: medium;
 }
-/*creation de la page CV /lien sans effet hover */
+.rettouraccueil2{
+  width: 92px;
+  height: 28px;
+  border: 2px solid #ffffff;
+  background-color: #ffffff87;
+  position: relative;
+  top: -335px;
+  left: 45px;
+  z-index: 2;
+}
+
+/*-------------titre page d'accueil--------------*/
+
 h1{
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
   text-transform: capitalize;
+  color: white;
 }
 p{
   color:white;
 }
+/*creation de la page CV /lien sans effet hover */
 #cvbg {
   position: relative;
   width: 100vw;
@@ -490,10 +554,20 @@ p{
   background-size: 100% 100%;
   align-items: center; 
 }
+#rta3{
+  background-color: rgba(255, 217, 0, 0.518);
+  width: 107px;
+  height: 39px;
+  position: absolute;
+  top: 24%;
+  left: 22%;
+  border-bottom-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-color: gol
+}
 .cvtitre {
   width: 50px;
-  Height: 50px;
-  
+  Height: 50px; 
   border-radius: 100%;
   display: flex;
   flex-direction: column;
@@ -562,33 +636,86 @@ border-radius: 20%;
   left: 19%;
   right: 0;
 }
+/**
+ * ----------------------------------------
+ * animation shake-horizontal
+ * ----------------------------------------
+ */
 
+.shake-horizontal {
+	-webkit-animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) 3s both;
+	        animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) 3s both;
+}
+ @-webkit-keyframes shake-horizontal {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  80% {
+    -webkit-transform: translateX(8px);
+            transform: translateX(8px);
+  }
+  90% {
+    -webkit-transform: translateX(-8px);
+            transform: translateX(-8px);
+  }
+}
+@keyframes shake-horizontal {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  80% {
+    -webkit-transform: translateX(8px);
+            transform: translateX(8px);
+  }
+  90% {
+    -webkit-transform: translateX(-8px);
+            transform: translateX(-8px);
+  }
+}
 
 /*creation du bouton download CV*/
 #btncv{
-  width: 100px;
-  background-color: blanchedalmond;
-  height: 25px;
-  border-radius: 20px;
-  position: absolute;
-  left: 25%;
-  bottom: 15%;
+    width: 97px;
+    background-color: #0000005e;
+    height: 22px;
+    border-radius: 20px;
+    position: relative;
+    top: 6px;
+    left: 33px;
+    color: white;
 }
 
 
-/*...........creation mode nuit...............*/
-
-#modenuit{
-  width: 100px;
-  height: 100px;
-  background-color: #ff0e0e;
-
-}
-
-#blob {
-  display: none;
-
-}
 
 /*...........creation mode telephone jour...............*/
 
@@ -599,27 +726,24 @@ border-radius: 20%;
     width: 30px;
     height: 30px;
     position: absolute;
-    top: 10px;
-    right: 39px;
+    top: 44px;
+    right: 25px;
     z-index: 10;
   }
   #blob2 {
     display: block;
     background-color: yellow;
-    width: 20px;
-    height: 14px;
+    width: 35px;
+    height: 20px;
     position: absolute;
-    top: 7px;
-    right: 34px
+    top: 15px;
+    right: 125px;
   }
   #titreh1{
       font-size:20px;
-      font-family: Pirates;
-      font-style: unset;
-      color: gold;
-      text-align: center;
+      position: relative;
+      left: -1%;
   }
-
   #christ{
       font-size:20px;
   }
@@ -638,26 +762,28 @@ border-radius: 20%;
     font-size: 15px;
     color: #000000;
     cursor: pointer;
-    height: 210px;
+    height: 347px;
     background-color: rgba(0, 0, 0, 0.449);
     display: flex;
     flex-direction: column;
     justify-content: center;
     right: -100%;
     transition: 1s;
-    width: 60%;
+    width: 42%;
     align-items: center;
     gap: 18px;
+    top: 126px;
   }
   #btncv {
-    width: 100px;
+    width: 122px;
     background-color: #00000015;
-    height: 19px;
+    height: 37px;
     border-radius: 20px;
     margin-left: -30px;
-    top: 189px;
-    color: white;
-    font-size: 11px;
+    top: 40px;
+    font-size: 16px;
+    left: 19px;
+    border-color: gold;
   }
   #burgerlist{
       font-size: 20px;
@@ -668,7 +794,7 @@ border-radius: 20%;
   a{
       text-decoration: none;
       color: white;
-      font-size: 12px;
+      font-size: 20px;
       margin-left: 6px;
       width: 100%;
   }
@@ -714,6 +840,181 @@ border-radius: 20%;
   min-width: 100%;
   min-height: 100%;
   z-index: -1;
+}
+
+
+
+/*--------------pages menu hamberger----------------*/
+
+
+/*--------------pages 1 about me----------------*/
+#photoaboutme {
+  width: 198px;
+  Height: 759px;
+  background-color: #00000083;
+  background-image: url(img2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 59%;
+  position: absolute;
+  left: -17%;
+  top: 49px;
+  z-index: 1;
+  background-size: 387px;
+}
+.retouraccueil {
+  width: 92px;
+  height: 28px;
+  border: 2px solid #ffffff;
+  background-color: #ffffff87;
+  position: relative;
+  top: -47%;
+  left: -37%;
+  z-index: 2;
+}
+#texteaboutme {
+  width: 165px;
+  Height: 609px;
+  background-color: #00000083;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  top: -7px;
+  left: 81px;
+ 
+}
+
+
+/*--------------pages 2 my philo----------------*/
+
+#philobg {
+  width: 972px;
+  Height: 847px;
+  background-color: #00000083;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: -47px;
+}
+#photophilo {
+  width: 312px;
+  Height: 676px;
+  background-image: url(img2.png);
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  background-position: -71px;
+  position: relative;
+  right: 50%;
+  top: 9%;
+  padding: 0px;
+}
+#textephilo {
+  position: absolute;
+  left: 32%;
+  top: 21%;
+}
+.retouraccueil {
+  width: 92px;
+  height: 28px;
+  border: 2px solid #ffffff;
+  background-color: #ffffff87;
+  position: relative;
+  top: -47%;
+  z-index: 2;
+}
+#rta2 {
+  left: -28%;
+}
+
+
+
+
+
+
+
+#cvbg {
+    position: relative;
+    width: 1128PX;
+    height: 845PX;
+    background-image: url(imgCVBG.jpg);
+    background-size: 100% 100%;
+    /* align-items: center; */
+    background-position: -683px;
+}
+#rta3 {
+  background-color: #00000066;
+  width: 107px;
+  height: 39px;
+  position: absolute;
+  top: 3%;
+  left: 22%;
+  border-bottom-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-color: gold;
+}
+#formation {
+  position: absolute;
+  top: 32%;
+  bottom: 0;
+  left: 13%;
+  right: 0;
+}
+}
+#experpro {
+  position: absolute;
+  top: 34%;
+  bottom: 0;
+  left: 1%;
+  top: 390px;
+}
+#experpro:hover {
+  width: 204px;
+  height: 496px;
+  margin: 0px;
+  padding: 0px;
+  top: 347px;
+  left: 18px;
+}
+#pointforts {
+  width: 172px;
+  height: 251px;
+  padding: 0px;
+  position: absolute;
+  bottom: 0;
+  left: 19%;
+  right: 0;
+}
+.cvtitre:hover p {
+  display: block;
+  width: 90%;
+  font-size: 18px;
+}
+#profiltyp {
+  position: absolute;
+  top: 487px;
+  left: 280px;
+}
+#profiltyp:hover {
+  top: 51%;
+  left: 262px;
+  padding: 0px;
+  width: 121px;
+  height: 150px;
+}
+#langues {
+  padding: 0px;
+  height: 264px;
+  width: 185px;
+  position: absolute;
+  top: 3%;
+  bottom: 0;
+  left: 1%;
+  right: 0;
+}
+#exp {
+  font-size: 14px;
+  color: whitesmoke;
 }
 
 }
